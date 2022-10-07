@@ -28,6 +28,8 @@ M.get_omnisharp_client = function()
   for _, client in pairs(clients) do
     if client.name == "omnisharp" then
       return client
+    elseif client.name == "omnishap_mono" then
+      return client
     end
   end
 end
